@@ -1,0 +1,22 @@
+User
+- id
+- email
+- firstName
+- lastName
+
+:has_many Games
+
+GameItem
+- id
+- text
+
+:belongs_to_many Games
+
+Game
+- id
+- dateStarted
+- score (?) - could be calculated probably
+- user_id
+
+:belongs_to User
+:belongs_to_many GameItems
